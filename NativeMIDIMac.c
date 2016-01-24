@@ -72,9 +72,9 @@ void processOSStatus(const OSStatus status, const uint8_t* msg){
 		
 		strcat( str, (const char *)msg );
 		strcat( str, ": " );
-		strcat( str, (const char *)GetMacOSStatusErrorString(status) );
+		/*strcat( str, (const char *)GetMacOSStatusErrorString(status) );
 		strcat( str, " - " );
-		strcat( str, (const char *)GetMacOSStatusCommentString(status) );
+		strcat( str, (const char *)GetMacOSStatusCommentString(status) );*/
 		showError( (const uint8_t*)str );
 		
 		// Also try to report the specific error code.  Could be a number or string.
@@ -298,7 +298,7 @@ FREObject getInterfaceList(FREContext ctx, void* funcData, uint32_t argc, FREObj
 		
 		// Grab a reference to a destination endpoint
 		MIDIEndpointRef dest = MIDIGetDestination(i);
-		if (dest != NULL) {
+		if (dest) {
 			
 			CFStringRef pname;
 			char name[64];
@@ -319,7 +319,7 @@ FREObject getInterfaceList(FREContext ctx, void* funcData, uint32_t argc, FREObj
 	for (ItemCount i = 0 ; i < sourceCount ; ++i) {
 		
 		MIDIEndpointRef source = MIDIGetSource(i);
-		if (source != NULL) {
+		if (source) {
 			
 			CFStringRef pname;
 			char name[64];
@@ -533,7 +533,7 @@ void finalizer(void* extData){
 		midiPortRef_O     = NULL;
 	}
 	
-	if(midiClientRef != NULL){
+	if(midiClientRef){
 		showMessage( (const uint8_t*) "Disposing of midi client." );
 		processOSStatus( MIDIClientDispose( midiClientRef ), (const uint8_t*)"MIDIClientDispose" );
 		midiClientRef = NULL;

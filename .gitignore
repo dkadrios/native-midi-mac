@@ -1,2 +1,12 @@
 .DS_Store
+*.swp
+*~.nib
+
 build/
+
+*.pbxuser
+*.perspective
+*.perspective3
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
