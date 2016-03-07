@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension xmlns="http://ns.adobe.com/air/extension/20.0">
+	<id>fs.ane.NativeMIDI</id>
+	<versionNumber>1.0.0</versionNumber>
+	<platforms> 
+        <!--<platform name="Windows-x86">
+            <applicationDeployment>
+                <nativeLibrary>NativeMIDI.dll</nativeLibrary>
+                <initializer>initializer</initializer>
+                <finalizer>finalizer</finalizer>
+            </applicationDeployment> 
+        </platform>-->
+        <platform name="MacOS-x86-64">
+			<applicationDeployment>
+				<nativeLibrary>NativeMIDI.framework</nativeLibrary>
+				<initializer>initializer</initializer>
+				<finalizer>finalizer</finalizer>
+			</applicationDeployment> 
+		</platform> 
+
+	</platforms> 
+	
+</extension>

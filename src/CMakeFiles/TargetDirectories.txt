@@ -1,0 +1,4 @@
+/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src/CMakeFiles/NativeMIDI.dir
+/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src/CMakeFiles/install.dir
+/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src/CMakeFiles/ALL_BUILD.dir
+/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src/CMakeFiles/ZERO_CHECK.dir

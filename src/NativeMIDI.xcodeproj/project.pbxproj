@@ -1,0 +1,913 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		50DA3D30443D48E5A952531A /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 033DD8430B454D67890DD82C /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				660EDAB32E0442488E45D791 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		6ED17E00637544DBA538C8E1 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 867F8A1E4E8D42C8B4E893D1 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				B2E40C9BBB414134A71794BF /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				5836E3E97EB044C4A8A3B2B6 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		8E526A22760F45969ED9A075 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 68AF1912782C490DA326BF35 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				4075B57FDCCD4A2799263E7D /* CMake Rules */,
+			);
+			dependencies = (
+				791B9C1FCEED47EBB0A178E1 /* PBXTargetDependency */,
+				D5C9EBA9A6A241BBAC4CA459 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		38478E161C8407AB00A62349 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38478E151C8407AB00A62349 /* CoreFoundation.framework */; };
+		38478E181C8407EE00A62349 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38478E171C8407EE00A62349 /* CoreMIDI.framework */; };
+		499CCE5753B74685B195574D /* NativeMIDI.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AF36E7B16E34892B6644085 /* NativeMIDI.h */; settings = {ATTRIBUTES = (Public, ); COMPILER_FLAGS = ""; }; };
+		86DF1F8B68844FAFA6B903D7 /* NativeMIDI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F728BEB6BC2549FFB1FE42E9 /* NativeMIDI.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		620BDFACF1AF4933A5821901 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E81543FF3623428B91197E09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E526A22760F45969ED9A075;
+			remoteInfo = ALL_BUILD;
+		};
+		964880A9A88544FFAEB4C131 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E81543FF3623428B91197E09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50DA3D30443D48E5A952531A;
+			remoteInfo = ZERO_CHECK;
+		};
+		9F801AE1CEBF43EAB9E72A17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E81543FF3623428B91197E09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50DA3D30443D48E5A952531A;
+			remoteInfo = ZERO_CHECK;
+		};
+		AA3DB2D27C8E45EC8D21923A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E81543FF3623428B91197E09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF6AC5B6D19248779F92B436;
+			remoteInfo = NativeMIDI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2AF36E7B16E34892B6644085 /* NativeMIDI.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = NativeMIDI.h; sourceTree = SOURCE_ROOT; };
+		38478E151C8407AB00A62349 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		38478E171C8407EE00A62349 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		3C0A6D8651504942A4FA63AC /* NativeMIDI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NativeMIDI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DEC6B3E216A46ED958C3E2B /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B14326AFC4294BC19B1579DB /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D90FCA5220604E76989674F9 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F728BEB6BC2549FFB1FE42E9 /* NativeMIDI.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = NativeMIDI.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38478E141C84079E00A62349 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38478E181C8407EE00A62349 /* CoreMIDI.framework in Frameworks */,
+				38478E161C8407AB00A62349 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32BD957855B741A2A8141858 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				963CA341F0BB4DE3899E68C3 /* CMake Rules */,
+				8DEC6B3E216A46ED958C3E2B /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		3373608122B0461CA763B3AB /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E12F15FDAA804812A4D2441E /* NativeMIDI */,
+				32BD957855B741A2A8141858 /* ALL_BUILD */,
+				35FDF01A75F549EE882443FA /* ZERO_CHECK */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		35FDF01A75F549EE882443FA /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				AC7BD3F35BFB45008E6AE3C6 /* CMake Rules */,
+				B14326AFC4294BC19B1579DB /* CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		46E4D500E8144ED8BEC11E4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C0A6D8651504942A4FA63AC /* NativeMIDI.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53D81C66E9FD4522872081C1 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				F728BEB6BC2549FFB1FE42E9 /* NativeMIDI.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		963CA341F0BB4DE3899E68C3 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		A1E4397C30704B259E29463E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2AF36E7B16E34892B6644085 /* NativeMIDI.h */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A933CF0396F54E1591F102E2 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		AC7BD3F35BFB45008E6AE3C6 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		D448B952E7A14246840D4DC0 = {
+			isa = PBXGroup;
+			children = (
+				38478E171C8407EE00A62349 /* CoreMIDI.framework */,
+				38478E151C8407AB00A62349 /* CoreFoundation.framework */,
+				3373608122B0461CA763B3AB /* Sources */,
+				A1E4397C30704B259E29463E /* Resources */,
+				46E4D500E8144ED8BEC11E4C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E12F15FDAA804812A4D2441E /* NativeMIDI */ = {
+			isa = PBXGroup;
+			children = (
+				53D81C66E9FD4522872081C1 /* Source Files */,
+				A933CF0396F54E1591F102E2 /* Header Files */,
+				D90FCA5220604E76989674F9 /* CMakeLists.txt */,
+			);
+			name = NativeMIDI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		724A402A0FC44E2AB318F956 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				499CCE5753B74685B195574D /* NativeMIDI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EF6AC5B6D19248779F92B436 /* NativeMIDI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02134A71ED884DD7BFC95F64 /* Build configuration list for PBXNativeTarget "NativeMIDI" */;
+			buildPhases = (
+				724A402A0FC44E2AB318F956 /* Headers */,
+				2E95F26CB6A643BB96B181FA /* Sources */,
+				38478E141C84079E00A62349 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06DA7CECAF0B4288BD81A86E /* PBXTargetDependency */,
+			);
+			name = NativeMIDI;
+			productName = NativeMIDI;
+			productReference = 3C0A6D8651504942A4FA63AC /* NativeMIDI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E81543FF3623428B91197E09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0720;
+			};
+			buildConfigurationList = C5500378C7FD4AD6950288A9 /* Build configuration list for PBXProject "NativeMIDI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D448B952E7A14246840D4DC0;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E526A22760F45969ED9A075 /* ALL_BUILD */,
+				EF6AC5B6D19248779F92B436 /* NativeMIDI */,
+				50DA3D30443D48E5A952531A /* ZERO_CHECK */,
+				6ED17E00637544DBA538C8E1 /* install */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4075B57FDCCD4A2799263E7D /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src -f /Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		660EDAB32E0442488E45D791 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src -f /Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		B2E40C9BBB414134A71794BF /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src -f /Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E95F26CB6A643BB96B181FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86DF1F8B68844FAFA6B903D7 /* NativeMIDI.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06DA7CECAF0B4288BD81A86E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50DA3D30443D48E5A952531A /* ZERO_CHECK */;
+			targetProxy = 964880A9A88544FFAEB4C131 /* PBXContainerItemProxy */;
+		};
+		5836E3E97EB044C4A8A3B2B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E526A22760F45969ED9A075 /* ALL_BUILD */;
+			targetProxy = 620BDFACF1AF4933A5821901 /* PBXContainerItemProxy */;
+		};
+		791B9C1FCEED47EBB0A178E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF6AC5B6D19248779F92B436 /* NativeMIDI */;
+			targetProxy = AA3DB2D27C8E45EC8D21923A /* PBXContainerItemProxy */;
+		};
+		D5C9EBA9A6A241BBAC4CA459 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50DA3D30443D48E5A952531A /* ZERO_CHECK */;
+			targetProxy = 9F801AE1CEBF43EAB9E72A17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2A557300A1944939B3DF9B9E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /AIRSDK/runtimes/air/mac;
+				FRAMEWORK_VERSION = A;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					NativeMIDI_EXPORTS,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /AIRSDK/include;
+				INFOPLIST_FILE = "/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src/CMakeFiles/NativeMIDI.dir/Info.plist";
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = /AIRSDK/runtimes/air/mac;
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = "  \"/AIRSDK/runtimes/air/mac/Adobe AIR.framework/Versions/1.0/Adobe AIR_64\"";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NativeMIDI;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		2FF1DE1225C94921907A022B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /AIRSDK/include;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		598C4EB26DD34C4999FD03E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /AIRSDK/include;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		6F6B561986044D14AE753728 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /AIRSDK/runtimes/air/mac;
+				FRAMEWORK_VERSION = A;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					NativeMIDI_EXPORTS,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /AIRSDK/include;
+				INFOPLIST_FILE = "/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src/CMakeFiles/NativeMIDI.dir/Info.plist";
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = /AIRSDK/runtimes/air/mac;
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = "  \"/AIRSDK/runtimes/air/mac/Adobe AIR.framework/Versions/1.0/Adobe AIR_64\"";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NativeMIDI;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		7EDBEC4AD7554FB78166042D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /AIRSDK/include;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		8A4D90AF74344A1B8BF191F6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /AIRSDK/include;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		947A1BC4DBD24AB98FE2F231 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /AIRSDK/include;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		98E540BB866246DF83A4784A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /AIRSDK/include;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		9A7543622E484E2F8210491C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /AIRSDK/include;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		AA2E89CF88C147B2B01F51BA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = "/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src/build";
+			};
+			name = RelWithDebInfo;
+		};
+		B36963C9B6174B66A1711C80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = "/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src/build";
+			};
+			name = Release;
+		};
+		BBAF8A06D3B3452EB32C3AA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /AIRSDK/include;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		D0BB92555C294568BCB7E7C2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /AIRSDK/include;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		D21F9AF9794F453AAF842E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = "/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src/build";
+			};
+			name = Debug;
+		};
+		E38E961850D74C50998D0617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /AIRSDK/runtimes/air/mac;
+				FRAMEWORK_VERSION = A;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					NativeMIDI_EXPORTS,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /AIRSDK/include;
+				INFOPLIST_FILE = "/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src/CMakeFiles/NativeMIDI.dir/Info.plist";
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = /AIRSDK/runtimes/air/mac;
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = "  \"/AIRSDK/runtimes/air/mac/Adobe AIR.framework/Versions/1.0/Adobe AIR_64\"";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NativeMIDI;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		E6E9C13F787D42AFA70D2FB2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = "/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src/build";
+			};
+			name = MinSizeRel;
+		};
+		EA95381458CB41C585EE11DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /AIRSDK/include;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		EC6E8D614EBE473780208246 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /AIRSDK/runtimes/air/mac;
+				FRAMEWORK_VERSION = A;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					NativeMIDI_EXPORTS,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /AIRSDK/include;
+				INFOPLIST_FILE = "/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src/CMakeFiles/NativeMIDI.dir/Info.plist";
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = /AIRSDK/runtimes/air/mac;
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = "   -fPIC  ";
+				OTHER_LDFLAGS = "  \"/AIRSDK/runtimes/air/mac/Adobe AIR.framework/Versions/1.0/Adobe AIR_64\"";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NativeMIDI;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		F64D019F2F344B3C8149F8A0 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /AIRSDK/include;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		F8DE0FC0176D4D0E866B90C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /AIRSDK/include;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02134A71ED884DD7BFC95F64 /* Build configuration list for PBXNativeTarget "NativeMIDI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC6E8D614EBE473780208246 /* Debug */,
+				E38E961850D74C50998D0617 /* Release */,
+				6F6B561986044D14AE753728 /* MinSizeRel */,
+				2A557300A1944939B3DF9B9E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		033DD8430B454D67890DD82C /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBAF8A06D3B3452EB32C3AA7 /* Debug */,
+				F8DE0FC0176D4D0E866B90C8 /* Release */,
+				98E540BB866246DF83A4784A /* MinSizeRel */,
+				F64D019F2F344B3C8149F8A0 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		68AF1912782C490DA326BF35 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA95381458CB41C585EE11DD /* Debug */,
+				598C4EB26DD34C4999FD03E8 /* Release */,
+				9A7543622E484E2F8210491C /* MinSizeRel */,
+				947A1BC4DBD24AB98FE2F231 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		867F8A1E4E8D42C8B4E893D1 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FF1DE1225C94921907A022B /* Debug */,
+				7EDBEC4AD7554FB78166042D /* Release */,
+				8A4D90AF74344A1B8BF191F6 /* MinSizeRel */,
+				D0BB92555C294568BCB7E7C2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C5500378C7FD4AD6950288A9 /* Build configuration list for PBXProject "NativeMIDI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D21F9AF9794F453AAF842E29 /* Debug */,
+				B36963C9B6174B66A1711C80 /* Release */,
+				E6E9C13F787D42AFA70D2FB2 /* MinSizeRel */,
+				AA2E89CF88C147B2B01F51BA /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E81543FF3623428B91197E09 /* Project object */;
+}

@@ -1,0 +1,7 @@
+/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src/../build/NativeMIDI.framework/Headers
+/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src/../build/NativeMIDI.framework/NativeMIDI
+/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src/../build/NativeMIDI.framework/Resources
+/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src/../build/NativeMIDI.framework/Versions/A/Headers/NativeMIDI.h
+/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src/../build/NativeMIDI.framework/Versions/A/NativeMIDI
+/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src/../build/NativeMIDI.framework/Versions/A/Resources/Info.plist
+/Users/dkadrioski13/git-nebiru/ZenEdit2/NativeMidiMac/src/../build/NativeMIDI.framework/Versions/Current
