@@ -1,4 +1,4 @@
-# native-midi-win
+# native-midi-mac
 
 MacOS portion of a MIDI based AIR Native Extension (ANE) for Adobe AIR.
 
